@@ -1,0 +1,17 @@
+# PRIMER PRACTICA
+
+## MONTAMOS LA APP EN NODE Y LA CONECTAMOS A UNA INSTANCIA DE MYSQL CON DATOS PERSISTENTES EN HOST 
+
+
+1- CREAR SU IMAGEN DE LA APP llamada node-app-<nombre_usuario>
+2- SI SE PUEDE HAY QUE SUBIRLA AL REGISTRO PERSONAL
+3- EXPONER LOS PUERTOS 3000 ENTRE MAQUINA LOCAL Y HOST
+4- SETEAR VARIABLES DE ENTORNO PARA CONTENEDOR
+5- OPCIONAL: SETEAR LAS VARIABLES CON SECRETS DE DOCKER 
+
+Base de datos mysql 8 o MariaDB compatible
+
+Si por algun motivo falla con algo relacionado a InnoDB intenta poner este comando despues de donde seleccionas que imagen vas a usar en tu BD <image> 
+
+command: --innodb_use_native_aio=0
+
